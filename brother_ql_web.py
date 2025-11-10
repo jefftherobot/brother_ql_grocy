@@ -5,8 +5,6 @@
 This is a web service to print labels on Brother QL label printers.
 """
 
-import cups
-
 import textwrap
 
 import sys, logging, random, json, argparse
@@ -20,9 +18,7 @@ from brother_ql.devicedependent import ENDLESS_LABEL, DIE_CUT_LABEL, ROUND_DIE_C
 from brother_ql import BrotherQLRaster, create_label
 from brother_ql.backends import backend_factory, guess_backend
 
-#uncomment the printer-specific implementation you wish to use
 from implementation_brother import implementation
-#from implementation_cups import implementation
 
 from font_helpers import get_fonts
 
