@@ -21,8 +21,8 @@ from brother_ql import BrotherQLRaster, create_label
 from brother_ql.backends import backend_factory, guess_backend
 
 #uncomment the printer-specific implementation you wish to use
-#from implementation_brother import implementation
-from implementation_cups import implementation
+from implementation_brother import implementation
+#from implementation_cups import implementation
 
 from font_helpers import get_fonts
 

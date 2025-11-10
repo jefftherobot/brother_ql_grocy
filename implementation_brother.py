@@ -28,7 +28,7 @@ class implementation:
         return [ (name, label_type_specs[name]['name']) for name in label_sizes]
         
     def get_default_label_size():
-        return "62"
+        return "17x54"
         
     def get_label_kind(self, label_size_description):
         return label_type_specs[label_size_description]['kind']
